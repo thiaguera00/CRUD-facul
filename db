@@ -1,0 +1,9 @@
+CREATE TABLE `crud_cursos`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `nome` VARCHAR(220) NOT NULL , `email` VARCHAR(220) NOT NULL , `telefone` TEXT NOT NULL , `interesses` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE TABLE `crud_cursos`.`cursos` ( `id` INT NOT NULL AUTO_INCREMENT , `area` VARCHAR(55) NOT NULL , `escolhas` VARCHAR(55) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+INSERT INTO cursos (id, area, escolhas) VALUES
+
+(1, 'Front end', 'Introduction to PHP-HTML-CSS'),
+(2, 'Back end', 'Introduction to C++'),
+(3, 'Data Base', 'Introduction to SQL');
